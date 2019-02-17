@@ -59,7 +59,7 @@ def main():
     client.on_message = on_message
     client.will_set("Status/RaspberryPiA", payload="offline", qos=2, retain=True) # lastwill message as a retained message with content "offline" to a topic "Status/RaspberryPiA".
     print(broker_ip)
-    client.connect(broker_ip) # tbcheck return then excute
+    client.connect(host=broker_ip, keepalive=10) # tbcheck return then excute
     client.loop_start()
     
     query_hardware()
