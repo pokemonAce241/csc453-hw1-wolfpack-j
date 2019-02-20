@@ -1,0 +1,2 @@
+Laptop2.py README
+Before runing Laptop2.py, change the defined MQTT_BROKER if the IP address has been changed. With the update of IP address, run Laptop2.py with console input "python Laptop2.py". Once Laptop2.py started, the logging process of broker will automatically start.
